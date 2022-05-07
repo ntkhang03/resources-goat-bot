@@ -574,22 +574,6 @@
             e.preventDefault();
             card.classList.add('active');
         });
-        document.getElementById("followers") = html("<h1> hi </h1>");
-        function request(url, callback) {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', url, true);
-            xhr.onload = function () {
-                callback(JSON.parse(xhr.response));
-            };
-            xhr.send();
-        }
-        // request("https://api.github.com/users/ntkhang03", function (data) {
-        //     console.log(data);
-        //     document.getElementById("followers") = "hi";
-        //     console.log(document.getElementById("followers"));
-        //     // window.location.
-        // })
-
     </script>
 
 </body>
