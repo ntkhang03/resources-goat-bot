@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Project GoatBot</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  
+
+ <link rel="stylesheet" href="./style.css">
+ <link rel="icon" href="https://raw.githubusercontent.com/ntkhang03/resources-goat-bot/master/home/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+  <div class="profile-card js-profile-card">
+    <div class="profile-card__img">
+      <img src="./logo.png" alt="profile card">
+    </div>
+
+    <div class="profile-card__cnt js-profile-cnt">
+      <div class="profile-card__name">NTKhang</div>
+      <div class="profile-card__txt">Admin Project <strong>Goat Bot</strong></div>
+      <div class="profile-card-loc">
+        <svg class="svg-icon" viewBox="0 0 20 20" width=25 height=25>
+							<path fill=black d="M10,0.186c-3.427,0-6.204,2.778-6.204,6.204c0,5.471,6.204,6.806,6.204,13.424c0-6.618,6.204-7.953,6.204-13.424C16.204,2.964,13.427,0.186,10,0.186z M10,14.453c-0.66-1.125-1.462-2.076-2.219-2.974C6.36,9.797,5.239,8.469,5.239,6.39C5.239,3.764,7.374,1.63,10,1.63c2.625,0,4.761,2.135,4.761,4.761c0,2.078-1.121,3.407-2.541,5.089C11.462,12.377,10.66,13.328,10,14.453z"></path>
+							<circle fill="black" cx="10" cy="5.67" r="1.608"></circle>
+						</svg>
+        <span class="profile-card-loc__txt">
+          Vĩnh Long, Việt Nam
+        </span>
+      </div>
+      <div class="profile-card__homepage">
+        <span>This is the homepage of the api for that project
+        </span>
+        </div>
+      
+      <div class="profile-card-inf">
+        <div class="profile-card-inf__item">
+          <div class="profile-card-inf__title">300+</div>
+          <div class="profile-card-inf__txt">Followers</div>
+        </div>
+
+        <div class="profile-card-inf__item">
+          <div class="profile-card-inf__title">0</div>
+          <div class="profile-card-inf__txt">Following</div>
+        </div>
+
+        <div class="profile-card-inf__item">
+          <div class="profile-card-inf__title">0</div>
+          <div class="profile-card-inf__txt">Articles</div>
+        </div>
+
+        <div class="profile-card-inf__item">
+          <div class="profile-card-inf__title">1</div>
+          <div class="profile-card-inf__txt">Project</div>
+        </div>
+      </div>
+      
+      
+      <!--=============== Contacts ===============-->
+      <div class="profile-card-inf__txt">
+        Contacts Me:
+      </div>
+      
+      <div class="profile-card-contacts">
+        
+        <a href="https://facebook.com/100010382497517">
+          <img class="profile-card-contacts facebook" src="./facebook.png" width=50 height=50 alt="facebook icon">
+        </a>
+        
+        <a href="https://messenger.com/100010382497517">
+          <img class="profile-card-contacts messenger" src="./messenger.png" width=50 height=50 alt="messenger icon">
+        </a>
+        
+        <a href="https://youtube.com/c/NTKGaming03">
+          <img class="profile-card-contacts youtube" src="./youtube.png" width=50 height=50 alt="youtube icon">
+        </a>
+        
+        <a href="https://github.com/ntkhang03">
+          <img class="profile-card-contacts github" src="./github.jpg" width=50 height=50 alt="github icon">
+        </a>
+        <a href="#">
+          <img src="./link.png" class="profile-card-contacts link" width=50 height=50 alt="link icon">
+        </a>
+        
+      </div>
+
+      <div class="profile-card-ctr">
+        <button onclick="location.href='https://m.me/100010382497517'" class="profile-card__button button--blue js-message-btn">Message</button>
+        <button onclick="location.href='https://facebook.com/100010382497517'" class="profile-card__button button--orange">Follow</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- partial -->
+  <script>
+    const btn = document.querySelector('.js-message-btn');
+    const card = document.querySelector('.js-profile-card');
+    
+    btn.addEventListener('click',function (e) {
+        e.preventDefault();
+        card.classList.add('active');
+    });
+    
+  </script>
+
+</body>
+</html>
